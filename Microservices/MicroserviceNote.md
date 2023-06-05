@@ -4,10 +4,10 @@
 
 1. Config Server use to handel common configuration of diffrent microservices so
    that we dont have to repeat same configuration in every service .
-   b. For example we have comon configuration of our Eureka client in every service
+2. For example we have common configuration of our Eureka client in every service
    for that we can create a cofig server and in other services we can simply
    refer to our config server.
-2. To setup config server we have to use dependacy:
+3. To setup config server we have to use dependacy:
 
 ```xml
 <dependency>
@@ -16,10 +16,10 @@
 </dependency>
 ```
 
-3. We have to create a git repo where we will store our application.yml file
+4. We have to create a git repo where we will store our application.yml file
    for diffrent diffrent sping profile for example application-dev.yml and
    application-prod.yml
-4. config-server properties configuration:
+5. config-server properties configuration:
 
 ```YML
 spring:
@@ -34,7 +34,7 @@ spring:
           clone-on-start: true
 ```
 
-5. config-server properties to use in client service:
+6. config-server properties to use in client service:
 
 ```YML
 spring:
