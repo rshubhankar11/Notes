@@ -2,12 +2,12 @@
 
 ## Config Server:
 
-1. Config Server use to handel common configuration of diffrent microservices so
-   that we dont have to repeat same configuration in every service .
-   b. For example we have comon configuration of our Eureka client in every service
-   for that we can create a cofig server and in other services we can simply
+1. Config Server use to handel common configuration of different microservices so
+   that we don't have to repeat same configuration in every service .
+   b. For example we have common configuration of our Eureka client in every service
+   for that we can create a config server and in other services we can simply
    refer to our config server.
-2. To setup config server we have to use dependacy:
+2. To setup config server we have to use dependance:
 
 ```xml
 <dependency>
@@ -17,7 +17,7 @@
 ```
 
 3. We have to create a git repo where we will store our application.yml file
-   for diffrent diffrent sping profile for example application-dev.yml and
+   for different different spring profile for example application-dev.yml and
    application-prod.yml
 4. config-server properties configuration:
 
@@ -44,14 +44,14 @@ spring:
 
 ## Service-Registry:
 
-1. Useing service-Registry we can register all our services.
-2. For example if you want to access one service in another servies then
+1. Using service-Registry we can register all our services.
+2. For example if you want to access one service in another services then
    we have to use port number and the the api path. But that port number
    can be changed at any time . So if it got changed the application will break.
 3. If you have registered our service in service-registry then we can call the
    service with its name instead of port number . And in feature if the port
    number changed that will not impact our services.
-4. Deppendacy :
+4. Dependency :
 
 ```xml
 <dependency>
@@ -108,12 +108,12 @@ eureka:
 
 ## API-Getway:
 
-1. API-Getway as the name suggested it act like a get way to our microservices.
-2. We can call all our services using API-Getway.
-3. Request form front end/user will come to API-Getway and then it decides
-   whic service it should call.
-4. We can implement spring scurity to our API-Getway in ourder to scure our services .
-5. Dependacy:
+1. API-Getaway as the name suggested it act like a get way to our microservices.
+2. We can call all our services using API-Getaway.
+3. Request form front end/user will come to API-Getaway and then it decides
+   which service it should call.
+4. We can implement spring security to our API-Getaway in order to secure our services .
+5. Dependency:
 
 ```xml
 <dependency>
@@ -122,7 +122,7 @@ eureka:
 </dependency>
 ```
 
-6. Configuraion:
+6. Configuration:
 
 ```yml
     	spring:
