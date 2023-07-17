@@ -4,7 +4,8 @@
 
 1. Config Server use to handel common configuration of different microservices so
    that we don't have to repeat same configuration in every service .
-   b. For example we have common configuration of our Eureka client in every service
+   
+ For example we have common configuration of our Eureka client in every service
    for that we can create a config server and in other services we can simply
    refer to our config server.
 2. To setup config server we have to use dependance:
