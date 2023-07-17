@@ -66,13 +66,13 @@ spring:
 </dependency>
 ```
 
-4. We have to annotate our main application class with :
+5. We have to annotate our main application class with :
 
 ```java
 @EnableEurekaServer
 ```
 
-5. properties configuration:
+6. properties configuration:
 
 ```properties
 server.port=8761
@@ -81,7 +81,7 @@ eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
 ```
 
-6. In order to register one service under our service registry we have to add
+7. In order to register one service under our service registry we have to add
    Eureka client dependancy:
 
 ```xml
@@ -93,7 +93,7 @@ eureka.client.fetch-registry=false
 
 > And use @EnableEurekaClient on the main class.
 
-7. properties configuration for registration :
+8. properties configuration for registration :
 
 ```yml
 #Eureka client setup
