@@ -4,10 +4,11 @@
 
 1. Config Server use to handel common configuration of different microservices so
    that we don't have to repeat same configuration in every service .
-   b. For example we have common configuration of our Eureka client in every service
+   
+2. For example we have common configuration of our Eureka client in every service
    for that we can create a config server and in other services we can simply
    refer to our config server.
-2. To setup config server we have to use dependance:
+3. To setup config server we have to use dependance:
 
 ```xml
 <dependency>
@@ -16,10 +17,10 @@
 </dependency>
 ```
 
-3. We have to create a git repo where we will store our application.yml file
+4. We have to create a git repo where we will store our application.yml file
    for different different spring profile for example application-dev.yml and
    application-prod.yml
-4. config-server properties configuration:
+5. config-server properties configuration:
 
 ```YML
 spring:
@@ -65,13 +66,13 @@ spring:
 </dependency>
 ```
 
-4. We have to annotate our main application class with :
+5. We have to annotate our main application class with :
 
 ```java
 @EnableEurekaServer
 ```
 
-5. properties configuration:
+6. properties configuration:
 
 ```properties
 server.port=8761
@@ -80,7 +81,7 @@ eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
 ```
 
-6. In order to register one service under our service registry we have to add
+7. In order to register one service under our service registry we have to add
    Eureka client dependancy:
 
 ```xml
@@ -92,7 +93,7 @@ eureka.client.fetch-registry=false
 
 > And use @EnableEurekaClient on the main class.
 
-7. properties configuration for registration :
+8. properties configuration for registration :
 
 ```yml
 #Eureka client setup
