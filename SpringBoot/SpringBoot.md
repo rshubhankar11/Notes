@@ -110,3 +110,17 @@ By providing or avoiding the above points, Spring Boot Framework reduces Develop
 
 - Spring is a web application framework based on Java. It provides tools and libraries to create a complete cutomized web application.
 - Wheras Spring Boot is a spring module which is used to create spring application project that can just run.
+
+## Spring IOC Container:
+
+- In Spring, the IOC (Inversion of Control) container is like a big boss that manages and handles objects (beans) in your application. Instead of you creating and managing the objects directly, the Spring container takes charge of it. It's called "Inversion of Control" because the control of object creation and lifecycle is inverted from you (the developer) to the Spring container.
+
+- The Spring IOC container is responsible for creating, initializing, configuring, and wiring these objects together based on the configuration you provide. It helps to achieve loose coupling between different components of your application and makes it easier to manage dependencies.
+
+## Spring Bean:
+
+- In Spring, a bean is just an ordinary Java object that is managed by the Spring IOC container. You can think of a bean as a piece of your application that Spring manages for you. These beans are created and configured by the Spring container according to the instructions you provide through configuration files (e.g., XML, Java annotations, or Java-based configuration).
+
+- These beans can represent various components in your application, such as services, data sources, controllers, or anything else you need. Spring provides features like dependency injection, where the dependencies of a bean (other objects it requires) are automatically provided by the container, making it easy to build and maintain complex applications.
+
+#### Note: In summary, Spring IOC container is like a manager that controls the creation and management of objects (beans) in your application, while Spring beans are the objects themselves that are managed by the container. Together, they help you build well-organized and easily maintainable applications.
