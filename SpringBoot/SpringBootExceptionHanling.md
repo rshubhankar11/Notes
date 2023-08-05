@@ -1,4 +1,4 @@
-you can handle exceptions using several annotations and techniques. Below are some examples of exception handling using annotations:
+# you can handle exceptions using several annotations and techniques. Below are some examples of exception handling using annotations:
 
 1. `@RestControllerAdvice`: This annotation is used to create a global exception handler that can handle exceptions across all controllers.
 
@@ -74,4 +74,4 @@ public class UserNotFoundException extends RuntimeException {
 }
 ```
 
-Remember to handle exceptions appropriately based on your application's requirements. You can use `@ResponseStatus` to indicate specific HTTP status codes, `@ResponseBody` to return custom error responses, and other Spring Boot features to create more sophisticated exception handling mechanisms.
+- Remember to handle exceptions appropriately based on your application's requirements. You can use `@ResponseStatus` to indicate specific HTTP status codes, `@ResponseBody` to return custom error responses, and other Spring Boot features to create more sophisticated exception handling mechanisms.
