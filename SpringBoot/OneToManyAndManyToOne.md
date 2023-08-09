@@ -1,4 +1,6 @@
-# Let's create an example of a One-to-Many and Many-to-One relationship using Spring Boot with JPA (Java Persistence API) and Hibernate. In this example, we'll model a simple relationship between a "Department" entity and an "Employee" entity. One department can have many employees, and each employee can belong to only one department.
+# One To Many and Many To One:
+
+### Let's create an example of a One-to-Many and Many-to-One relationship using Spring Boot with JPA (Java Persistence API) and Hibernate. In this example, we'll model a simple relationship between a "Department" entity and an "Employee" entity. One department can have many employees, and each employee can belong to only one department.
 
 Here are the steps to create the example:
 
@@ -125,10 +127,12 @@ Step 6: Test the One-to-Many and Many-to-One Relationship
 You can now run the Spring Boot application and use tools like Postman to test the REST API endpoints. For example:
 
 - Create a new department:
+
   - POST: http://localhost:8080/api/departments
   - Request body: {"name": "HR Department"}
 
 - Create a new employee and associate with the HR department:
+
   - POST: http://localhost:8080/api/employees
   - Request body: {"name": "John Doe", "department": {"id": 1}}
 
