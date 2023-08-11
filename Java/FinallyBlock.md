@@ -96,3 +96,54 @@ public class TryFinallyInsideCatch {
 In this example, the outer `try` block catches an `ArithmeticException` when trying to divide by zero. Inside the `catch` block, there is a nested `try`-`finally` block. The `try` block inside the `catch` block performs another division by zero, which will result in an exception. The `finally` block within the nested `try` block will still be executed regardless of whether an exception is thrown.
 
 While using a `try`-`finally` block inside a `catch` block is technically possible, it's important to use it judiciously to avoid overly complex code that becomes hard to understand. It's generally a good practice to separate error handling and cleanup logic to maintain code clarity.
+
+## In java if we have added return statement in try block then . Finally block will execute or not ?
+
+Yes, the `finally` block will execute even if you have a `return` statement in the `try` block. The purpose of the `finally` block is to ensure that certain code is executed regardless of whether an exception is thrown or a `return` statement is encountered.
+
+Here's an example:
+
+```java
+public class FinallyExample {
+    public static void main(String[] args) {
+        System.out.println(divide(10, 2)); // Output: Result: 5
+        System.out.println(divide(10, 0)); // Output: Cannot divide by zero!
+    }
+
+    public static int divide(int dividend, int divisor) {
+        try {
+            return dividend / divisor;
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+            return -1;
+        } finally {
+            System.out.println("Finally block executed.");
+        }
+    }
+}
+```
+
+In this example, even though the first division succeeds, and the result is returned, the `finally` block is still executed. Similarly, in the case of an exception (when attempting to divide by zero), the `finally` block is executed after the `catch` block.
+
+So, regardless of whether a `return` statement is encountered in the `try` block or not, the `finally` block will always execute.
+
+## When we have system.exit() in try block then , Finally will execute or not ?
+
+If you have `System.exit()` in the `try` block, the `finally` block will not execute. When `System.exit()` is called, it terminates the Java Virtual Machine (JVM) and the program's execution is forcefully stopped, skipping any remaining code, including the code in the `finally` block.
+
+Here's an example to illustrate this:
+
+```java
+public class FinallyExitExample {
+    public static void main(String[] args) {
+        try {
+            System.out.println("Inside try block");
+            System.exit(0);
+        } finally {
+            System.out.println("Inside finally block");
+        }
+    }
+}
+```
+
+In this example, if you run the program, you will see that only the message "Inside try block" is printed, and the "Inside finally block" message from the `finally` block is not printed. This is because the `System.exit(0)` call terminates the program before the `finally` block can be executed.
