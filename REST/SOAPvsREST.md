@@ -1,4 +1,4 @@
-Below is a table comparing SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) based on various characteristics:
+### Below is a table comparing SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) based on various characteristics:
 
 | Characteristic    | SOAP                                           | REST                                                |
 | ----------------- | ---------------------------------------------- | --------------------------------------------------- |
