@@ -62,7 +62,7 @@ In this example, the `finally` block contains its own `try`-`catch` block. It's 
 
 In most situations, it's better to use a `finally` block solely for cleanup tasks and not for handling exceptions. If you need to handle exceptions that occur within a `finally` block, it's often better to let them propagate up the call stack and handle them at a higher level where the context is clearer.
 
-## can we write try finally in side catch block in java ?
+## Can we write try finally in side catch block in java ?
 
 Yes, you can write a `try`-`finally` block inside a `catch` block in Java. This can be useful when you want to ensure that certain cleanup or resource release tasks are performed regardless of whether an exception is caught in the `catch` block.
 

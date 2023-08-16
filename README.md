@@ -16,4 +16,5 @@
 2. Externalization(Completed)
 3. SOLID Principles Java (Completed )
 4. Optional class in Java (Completed)
-5. Cloning- Java Cloneable marker interface(Completed )
+5. Cloning- Java Cloneable marker interface (Completed)
+6. Transient - in serialization.
