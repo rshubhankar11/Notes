@@ -1,6 +1,6 @@
 # Factory Design Pattern in Java
 
-The **Factory Design Pattern (Also called as Factory method design pattern)**is a creational design pattern that provides an interface for creating objects in a super class but allows subclasses to alter the type of objects that will be created. It provides a way to create objects without specifying the exact class of object that will be created. This pattern promotes loose coupling and follows the "Open/Closed Principle," allowing easy addition of new object types without modifying existing code.
+The ** Factory Design Pattern (Also called as Factory method design pattern) **is a creational design pattern that provides an interface for creating objects in a super class but allows subclasses to alter the type of objects that will be created. It provides a way to create objects without specifying the exact class of object that will be created. This pattern promotes loose coupling and follows the "Open/Closed Principle," allowing easy addition of new object types without modifying existing code.
 
 ### Why It's Needed
 
