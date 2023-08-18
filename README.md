@@ -7,6 +7,8 @@
 3. Rest API
 4. Microservices
 5. Design Patterns
+6. Java Script
+7. React Js
 
 > Note : Plan is to update this repo and create notes so that at one place I can get all the important topics and its detailed info .
 
