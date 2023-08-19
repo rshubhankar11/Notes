@@ -10,7 +10,7 @@ React.js is a popular JavaScript library for building user interfaces. It allows
 - [Building a React Project](#building-a-react-project)
 - [React Component Lifecycle](#react-component-lifecycle)
 - [Advantages and Disadvantages of React](#advantages-and-disadvantages-of-react)
-- [React.js Interview Questions](#reactjs-interview-questions)
+- [React Interview Questions](#react-interview-questions)
 
 ## What is React.js?
 
@@ -191,7 +191,7 @@ Always refer to the official [React documentation](https://reactjs.org/docs/gett
 
 It's important to weigh these advantages and disadvantages against your project's requirements and your team's familiarity with React when making a decision on whether to use it for your application development.
 
-## React.js Interview Questions :
+## React Interview Questions :
 
 ## 1. What's the Difference Between Controlled and Uncontrolled Components?
 
