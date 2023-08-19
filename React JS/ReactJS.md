@@ -10,7 +10,6 @@ React.js is a popular JavaScript library for building user interfaces. It allows
 - [Building a React Project](#building-a-react-project)
 - [React Component Lifecycle](#react-component-lifecycle)
 - [Advantages and Disadvantages of React](#advantages-and-disadvantages-of-react)
-
 - [React.js Interview Questions](#reactjs-interview-questions)
 
 ## What is React.js?
