@@ -1,4 +1,4 @@
-Certainly! Here's a comprehensive overview of JavaScript ES6 (ECMAScript 2015) in Markdown (md) format, covering important topics:
+
 
 # JavaScript ES6 (ECMAScript 2015) Overview
 
