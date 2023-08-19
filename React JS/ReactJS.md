@@ -191,7 +191,7 @@ Always refer to the official [React documentation](https://reactjs.org/docs/gett
 
 It's important to weigh these advantages and disadvantages against your project's requirements and your team's familiarity with React when making a decision on whether to use it for your application development.
 
-## React Interview Questions :
+# React Interview Questions :
 
 ## 1. What's the Difference Between Controlled and Uncontrolled Components?
 
