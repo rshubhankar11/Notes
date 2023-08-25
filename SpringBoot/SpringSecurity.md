@@ -87,24 +87,31 @@ The UserDetails interface represents essential user information. It's used by Sp
 ## Interview Questions and Answers
 
 **Q1**: What is the purpose of Spring Boot Security?
+
 **A1**: Spring Boot Security provides security features for Spring Boot applications, including authentication and authorization mechanisms.
 
 **Q2**: How do you customize login and logout URLs in Spring Boot Security?
+
 **A2**: You can use the `.formLogin()` and `.logout()` methods in the security configuration class to specify custom URLs.
 
 **Q3**: What is a `UserDetailsService`?
+
 **A3**: `UserDetailsService` is an interface used to load user-specific data during authentication, allowing you to customize user retrieval.
 
 **Q4**: How can you secure RESTful APIs using Spring Boot Security?
+
 **A4**: You can configure security for specific URLs or URL patterns using the `.antMatchers()` method in the security configuration.
 
 **Q5**: What is the purpose of the `PasswordEncoder` interface?
+
 **A5**: The `PasswordEncoder` interface is used to encode and verify passwords securely. It helps protect user passwords from being stored as plain text.
 
 **Q6**: What is the default behavior of Spring Boot Security if no authentication is configured?
+
 **A6**: If no authentication configuration is provided, Spring Boot Security will enable basic authentication by default.
 
 **Q7**: How can you ensure that a specific endpoint is accessible only to users with certain roles?
+
 **A7**: You can use the `.hasRole()` method within the `.authorizeRequests()` configuration to restrict access to users with specific roles.
 
 ---
