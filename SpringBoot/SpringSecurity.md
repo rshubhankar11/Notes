@@ -83,9 +83,6 @@ The UserDetails interface represents essential user information. It's used by Sp
 
 - Remember to include the `csrf` token in forms for protection against cross-site request forgery attacks.
 
-I understand your request, and I can certainly provide you with an explanation of Spring Boot Security, along with examples, notes, and common interview questions. However, due to the complexity and length of the topic, it might not be feasible to include everything in a single response. I'll do my best to provide a comprehensive overview and some examples. If you need further information or clarification, feel free to ask.
-
-**Note**: The content provided here is for educational purposes, and actual implementation and best practices might change over time. Make sure to refer to the official Spring documentation and other reliable resources for the latest information.
 
 ## Interview Questions and Answers
 
