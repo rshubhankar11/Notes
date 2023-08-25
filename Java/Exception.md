@@ -9,6 +9,7 @@
 - [Checked vs. Unchecked Exceptions](#checked-vs-unchecked-exceptions)
   - [Checked Exceptions](#checked-exceptions)
   - [Unchecked Exceptions](#unchecked-exceptions)
+- [Runtime vs. Compile-Time Exceptions](#runtime-vs-compile-time-exceptions)
 - [Common Exception Classes](#common-exception-classes)
 - [Exception Handling](#exception-handling)
   - [try-catch](#try-catch)
@@ -38,6 +39,71 @@ In Java, errors and exceptions are used to handle abnormal situations that can d
 | **Definition** | Checked exceptions are exceptions that must be either caught using a try-catch block or declared using the `throws` keyword in the method signature. | Unchecked exceptions are exceptions that don't need to be caught or declared. They typically result from programming errors. |
 | **Examples**   | IOException, SQLException                                                                                                                            | NullPointerException, ArrayIndexOutOfBoundsException                                                                         |
 | **Handling**   | Required to be caught or declared, otherwise a compilation error occurs.                                                                             | Optional to catch or declare. Compiler doesn't enforce handling.                                                             |
+
+## Runtime vs. Compile-Time Exceptions
+
+## Runtime Exceptions (Unchecked Exceptions)
+
+Runtime exceptions, also known as unchecked exceptions, occur during the execution of a program. They usually result from logical errors in the code and are not checked by the compiler. Runtime exceptions do not require explicit handling, but they can be caught if desired.
+
+### Examples of Runtime Exceptions:
+
+1. **NullPointerException**: Occurs when trying to access a member of a null object.
+
+   ```java
+   String str = null;
+   int length = str.length(); // Throws NullPointerException
+   ```
+
+2. **ArithmeticException**: Occurs when there's an arithmetic error, such as division by zero.
+
+   ```java
+   int result = 10 / 0; // Throws ArithmeticException
+   ```
+
+3. **ArrayIndexOutOfBoundsException**: Occurs when trying to access an array element with an invalid index.
+
+   ```java
+   int[] numbers = {1, 2, 3};
+   int value = numbers[5]; // Throws ArrayIndexOutOfBoundsException
+   ```
+
+## Compile-Time Exceptions (Checked Exceptions)
+
+Compile-time exceptions, also known as checked exceptions, are exceptions that the Java compiler checks at compile time. They usually result from external factors that might go wrong during program execution, such as I/O operations or database interactions. Checked exceptions must be either caught using a `try-catch` block or declared using the `throws` keyword.
+
+### Examples of Compile-Time Exceptions:
+
+1. **IOException**: Occurs when there's an issue with input/output operations, like file reading or writing.
+
+   ```java
+   try {
+       FileReader reader = new FileReader("file.txt"); // Throws IOException
+   } catch (IOException e) {
+       e.printStackTrace();
+   }
+   ```
+
+2. **SQLException**: Occurs when there's an issue with database operations.
+
+   ```java
+   try {
+       Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "username", "password");
+       Statement stmt = conn.createStatement();
+       stmt.executeUpdate("INSERT INTO table_name VALUES (value1, value2)"); // Throws SQLException
+   } catch (SQLException e) {
+       e.printStackTrace();
+   }
+   ```
+
+## Comparison Table
+
+| Aspect              | Runtime Exceptions (Unchecked)                                            | Compile-Time Exceptions (Checked)                   |
+| ------------------- | ------------------------------------------------------------------------- | --------------------------------------------------- |
+| Checked by Compiler | No                                                                        | Yes                                                 |
+| Handling Required   | No (but can be caught if desired)                                         | Yes (catch with try-catch or declare with `throws`) |
+| Examples            | NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException | IOException, SQLException                           |
+| Origin              | Usually programming errors                                                | External factors (I/O, database, etc.)              |
 
 ## Common Exception Classes
 
