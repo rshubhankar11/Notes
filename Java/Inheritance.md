@@ -145,11 +145,8 @@ In the example:
 - `Child` class overrides the `method` of the `Parent` class and throws a subtype of `Exception`, which is `IOException`.
 - `AnotherChild` class overrides the `method` of the `Parent` class without throwing any exception.
 
-Remember that the overriding method can choose not to throw any exception, even if the overridden method in the parent class throws an exception.
 
-## Important/Tricky Interview Questions :
-
-Certainly! Here are some important and tricky interview questions related to exceptions and inheritance in Java:
+## Important/Tricky Interview Question:
 
 1. **Question**: Can a subclass method throw a broader exception than the superclass method it overrides?
 
@@ -182,4 +179,3 @@ Certainly! Here are some important and tricky interview questions related to exc
 8. **Question**: Can an interface method throw an exception?
    - **Answer**: Yes, an interface method can declare exceptions using the `throws` clause. However, implementing classes are not required to throw those exceptions.
 
-Remember to practice these concepts with code examples to solidify your understanding and prepare for potential interview questions.
