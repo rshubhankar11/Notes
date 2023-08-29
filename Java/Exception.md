@@ -230,5 +230,3 @@ class InvalidAgeException extends Exception {
 In this example, the custom exception `InvalidAgeException` is thrown when the age is below 18. This provides a clear indication of what went wrong and allows for targeted exception handling.
 
 ---
-
-Feel free to integrate this section about custom exceptions into the existing Markdown content. This additional information covers the creation, usage, and guidelines for custom exceptions in Java.
