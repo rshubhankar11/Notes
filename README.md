@@ -20,3 +20,6 @@
 4. Optional class in Java (Completed)
 5. Cloning- Java Cloneable marker interface (Completed)
 6. Transient - in serialization. (Completed)
+7. Java Class Loader sub system , Why we need multiple Class loader (Completed)
+8. SQL Union and how we can de it in Hibernate.(Complete)
+9. Java is call by value or call by reference ?(Completed)
