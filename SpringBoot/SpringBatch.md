@@ -111,4 +111,4 @@ To get started with Spring Batch, follow these steps:
 
 Spring Batch simplifies batch processing in Java applications. It provides a powerful framework for building robust and scalable batch jobs. By following this guide, you can get started with Spring Batch and create batch processing solutions tailored to your needs.
 
-Remember to consult the official Spring Batch documentation for detailed information and advanced features: [Spring Batch Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html).
+Official Spring Batch documentation for detailed information and advanced features: [Spring Batch Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html).
