@@ -45,6 +45,7 @@ entityManager.merge(retrievedProduct);
 
 // Delete a product
 entityManager.remove(retrievedProduct);
+````
 
 
 
