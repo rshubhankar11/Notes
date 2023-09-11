@@ -47,6 +47,7 @@ entityManager.merge(retrievedProduct);
 entityManager.remove(retrievedProduct);
 
 
+
 ## Spring Boot JPA
 
 Spring Boot JPA is a part of the Spring ecosystem and provides a higher-level abstraction over Hibernate. It simplifies database access by offering features like automatic repository creation and declarative transaction management.
