@@ -1,5 +1,7 @@
 # JVM Architecture
 
+![alt text](https://github.com/rshubhankar11/Notes/blob/main/Java/Charts%20PNG/JVM%20Architecture.jpg)
+
 ## Class Loader Subsystem
 
 The class loader subsystem takes `.class` files as input and performs the following operations:
