@@ -27,4 +27,4 @@
 11. Bean Scope in Spring boot(Completed)
 12. Partition on spring batch(Completed)
 13. Pagination in spring boot(Completed)
-14. Enum
+14. Enum(Completed)
