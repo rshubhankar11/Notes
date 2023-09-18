@@ -25,3 +25,32 @@ These areas are available at runtime to store different types of data. The vario
 4. **Program Counter (PC) Register:** This register contains the address of the next instruction that has to be executed.
 
 5. **Java Native Stack:** This area is used for storing non-Java code during the migration of the application from non-Java code to Java code. Non-Java code is referred to as native code.
+
+## Execution Engine
+
+The execution engine is responsible for executing the Java program. It contains two parts:
+
+1. **Interpreter**
+2. **JIT (Just-In-Time) Compiler**
+
+Both parts of the execution engine are responsible for executing the code in parallel, reducing the execution time, and thereby improving the performance of the application.
+
+_Note_: The JIT compiler is designed by Hot Spot Technologies, and the code executed by a JIT compiler will be called "hot spots."
+
+## Library
+
+A library is a collection of pre-defined programs of a language.
+
+## Native Libraries
+
+The collection of libraries of non-Java languages will be collectively called native libraries.
+
+## Native Interface
+
+The native interface helps load the native code from native libraries into the Java native stack.
+
+## OS (Operating System)
+
+To execute a Java program, the JVM requires some resources like memory, processor, etc., from the machine. To obtain those resources, the JVM has to communicate with the operating system.
+
+---
