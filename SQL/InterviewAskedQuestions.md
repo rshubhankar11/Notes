@@ -64,3 +64,21 @@ WHERE salary = (SELECT MAX(salary) FROM employees);
 ```
 
 In this query, we use a subquery to find the maximum salary in the `employees` table, and then we use that value in the main query's `WHERE` clause to retrieve the employee(s) with that maximum salary. The `*` in the `SELECT` statement selects all columns for the employee(s) with the highest salary.
+
+### 2. Get 4th Highest salaried
+
+```sql
+SELECT DISTINCT salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 3;
+```
+
+In this SQL query:
+
+1. We select the `salary` column from the `employee` table.
+2. We use the `ORDER BY` clause to sort the salaries in descending order (from highest to lowest).
+3. The `LIMIT 1` clause is used to limit the result to only one row.
+4. The `OFFSET 3` clause skips the first three rows (which are the highest three salaries), effectively giving you the 4th highest salary.
+
+Make sure to replace `employee` with the actual name of your employee table in your database.
